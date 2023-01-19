@@ -9,3 +9,11 @@ with open('reviews.txt', 'r') as f:
 print(data[0])
 print('.................')
 print(data[1])
+print('總共有', len(data), '筆資料')
+
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+
+print(sum_len)
+print('平均長度為', sum_len / len(data), '字數')
